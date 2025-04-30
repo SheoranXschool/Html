@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Playbook | SheoranX AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon: #00ffae;
+      --bg: #0f0f0f;
+      --text: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 20px;
+      overflow-x: hidden;
+      cursor: crosshair;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      animation: rotate 20s linear infinite;
+      filter: drop-shadow(0 0 5px var(--neon));
+      z-index: 100;
+    }
+
+    h1, h2, h3 {
+      color: var(--neon);
+      text-shadow: 0 0 10px rgba(0, 255, 174, 0.3);
+      margin: 0.5em 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      letter-spacing: -0.03em;
+      margin-top: 2em;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: #cccccc;
+      margin: 1.5em 0;
+      opacity: 0.9;
+    }
+
+    .button {
+      background: var(--neon);
+      color: var(--bg);
+      padding: 1em 2em;
+      font-weight: 800;
+      border: none;
+      border-radius: 100px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: inline-block;
+      margin: 2em 0;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 255, 174, 0.4);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    li {
+      margin: 1em 0;
+      padding-left: 1em;
+      border-left: 2px solid var(--neon);
+      position: relative;
+      left: 0;
+      transition: left 0.3s ease;
+    }
+
+    li:hover {
+      left: 5px;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--neon);
+      padding-left: 1em;
+      font-style: italic;
+      font-size: 1.2rem;
+      margin: 2em 0;
+    }
+
+    .highlight {
+      color: var(--neon);
+      font-weight: 600;
+    }
+
+    /* === Animations === */
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+
+    footer {
+      margin-top: 5em;
+      border-top: 1px solid #333;
+      padding-top: 2em;
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--neon);
+      margin: 0.5em 0;
+    }
+
+    .price small {
+      font-size: 1rem;
+      color: #999;
+    }
+
+    .section {
+      margin: 3em 0;
+    }
+  </style>
+</head>
+<a href="https://ibb.co/GQr8pmY3" target="_blank">
+  <img 
+    src="https://i.ibb.co/xqrBLZ98/file-000000001c2462309807de17fa38cce4.png" 
+    class="logo" 
+    alt="SheoranX AI Logo"
+  >
+</a>
+
+<style>
+  .logo {
+    max-width: 200px;  /* Adjust size as needed */
+    height: auto;      /* Maintain aspect ratio */
+    border: none;      /* Remove any default borders */
+  }
+</style>
+  
+
+  <div class="container">
+    <h1 class="fade-in delay-1">HTML PLAYBOOK</h1>
+    <p class="tagline fade-in delay-2">The tactical playbook for builders, creators, and digital rebels</p>
+
+    <div class="fade-in delay-3">
+      <h2>PRESALE LAUNCH</h2>
+      <p class="price">₹30 ONLY <small>(Launch price: ₹389)</small></p>
+      <a href="https://sheoranx.gumroad.com/l/Html" class="button float">GET EARLY ACCESS</a>
+    </div>
+
+    <div class="section fade-in delay-4">
+      <h2>Don't Learn HTML Like a College Kid</h2>
+      <p>This isn't a boring "tags and syntax" guide. It's a tactical manual for <span class="highlight">creators, coders, and digital warriors</span> who want to build websites, SaaS products, and online businesses — <em>fast</em>.</p>
+      <blockquote><strong>No fluff. No wasted motion. Just raw HTML firepower.</strong></blockquote>
+    </div>
+
+    <div class="section fade-in delay-1">
+      <h2>What's Inside?</h2>
+      <ul>
+        <li>80/20 HTML Fundamentals (only what matters)</li>
+        <li>Developer-Minded Structure Patterns</li>
+        <li>5 Ready-to-Use Templates (landing pages, dashboards)</li>
+        <li>SEO & Accessibility Tactics That Convert</li>
+        <li>Code Snippet Vault (copy-paste ready)</li>
+      </ul>
+    </div>
+
+    <div class="section fade-in delay-2">
+      <h2>Built for Creators. Not Academics.</h2>
+      <p>If you're a student, indie hacker, or solo dev — this playbook gives you the <span class="highlight">shortcuts, tools, and mindset</span> to build better and faster.</p>
+    </div>
+
+    <div class="section fade-in delay-3">
+      <h2>You'll Get:</h2>
+      <ul>
+        <li>PDF Playbook (30+ Pages)</li>
+        <li>Visual HTML Cheatsheet</li>
+        <li>Bonus: Landing Page Templates</li>
+        <li>Lifetime Updates</li>
+        <li>Private Community Access (Early Buyers Only)</li>
+      </ul>
+    </div>
+
+    <div class="section fade-in delay-4">
+      <h2>Presale Benefits</h2>
+      <ul>
+        <li>₹30 locked-in price (vs ₹999 public price)</li>
+        <li>Direct input on content</li>
+        <li>Your name in the "Early Builders" list</li>
+        <li>Free future updates forever</li>
+      </ul>
+    </div>
+
+    <div class="fade-in delay-5">
+      <a href="https://sheoranx.gumroad.com/l/Html" class="button">CLAIM YOUR SPOT NOW</a>
+      <p style="font-size: 0.9rem; opacity: 0.7;">100 spots remaining at this price</p>
+    </div>
+
+    <footer class="fade-in delay-4">
+      <p>© 2024 SheoranX AI | For the 1% of builders</p>
+    </footer>
+  </div>
+</body>
+</html>
